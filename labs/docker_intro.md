@@ -58,7 +58,7 @@ Speaking of images, let's see what images you have installed locally.
 Run the **Docker images** command to see the list of images on your machine.
 
 After running this command, you should see something like this:
-![Images](/labs/images/Images.png)
+![Images](images/Images.png)
 
 Notice the **hello-world** image that was downloaded when you issued the run command.
 
@@ -82,7 +82,7 @@ This will start a container running NGINX and spit out the container id. NGINX l
 
  After running the docker run command you should be able to open up a browser and go to http://localhost:8080 and see the nginx welcome screen.  
  
- ![NGINX Welcome](/labs/images/nginxWelcome.png)
+ ![NGINX Welcome](images/nginxWelcome.png)
  
 After you've seen the NGINX welcome screen in the browser, refresh it a few times to get a few hits.
 
@@ -98,7 +98,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 ```
 Note the **CONTAINER ID** is the unique ID for your running conatiner.  It's crucial to know if you want to do anything later with your running container... like stopping it.
 
-To see the logs of the current container, just run "docker logs \<container id>"
+To see the logs of the current container, just run "docker logs <container id>"
  
  This should spit out the current logs of your running container.  In our case, it should just show a line for each hit to the NGINX welcome page.
 
@@ -112,9 +112,11 @@ docker stop <YOUR CONTAINER ID>
 After this, re-run your **docker ps** command and notice that the container should no longer be running.
 
 
-### STRETCH GOAL 
+### Interacting Directly with Containers
 
-Your mission for this stretch goal is to go into the running container and find where the NGINX index.html file is and write it out to the console.  In order to get into the running container we are going to use the [docker exec](https://docs.docker.com/engine/reference/commandline/exec/) command.  The docker exec command allows you to run a command in a running container.  In our case we are going to tell it to run the bash shell and pipe the input and output back to our current terminal.
+Many times you may need to interact with a running container.  Typically this is the case for trouble shooting, but there can be other tasks you may need to perform directly on a running container.
+
+For this exercise, you will exec(shell) into the running container and find where the NGINX index.html file is and write it out to the console.  In order to get into the running container we are going to use the [docker exec](https://docs.docker.com/engine/reference/commandline/exec/) command.  The docker exec command allows you to run a command in a running container.  In our case we are going to tell it to run the bash shell and pipe the input and output back to our current terminal.
 
 *Note*: Windows users should use the command prompt or powershell for this.  If you must use something like git bash on Windows, you will most likely have to prefix the entire docker exec command with 'winpty' to get around tty errors. This is only for running docker exec commands that pipe the input and output to the terminal (that is using the '-it' option).  Mac and Linux users ignore this note.
 
@@ -144,5 +146,12 @@ Now you are at a bash prompt inside the running container.  Issue an "ls" comman
 
 Now use docker hub to find out where the nginx html files are stored.  Go to hub.docker.com and search for the nginx container and find where it stores its html files.
 
+For fun, you can override the index.html command by just echoing something else into it like this:
+```
+echo "All your html are belong to us" > index.html
 
+```
+If you do it correctly, you should be able to open a browser to http://localhost:8080 again and see your new message instead of the default nginx greeting.
+
+Try killing the container and then start a new ngnx container. Then check the index.html in the new container.  Is your message still there? Why wouldn't it be there?
 
