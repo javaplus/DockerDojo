@@ -1,10 +1,12 @@
-Create a [busybox](https://hub.docker.com/_/busybox) container that [mounts](https://docs.docker.com/storage/volumes/) a **folder** with a text file from your machine that has the following text in it:
+In this exercise, you will use a simple linux container with some text utilites pre-installed to do some file manipulation.  The goal here is to see how using Docker volume mounts you can expose folders and files from your file system (or other file systems) to the Docker container.  One valuable use case this allows you to take advantage is the ability to use tools/utilities that work with local files, without having to install anything permanently.
+
+Create a [busybox](https://hub.docker.com/_/busybox) container that [mounts](https://docs.docker.com/storage/volumes/) a **folder** with a text file named **lying.txt** from your machine that has the following text in it:
 
 ```
 Star Wars Episode 1 is the best movie of the franchise!
 
 ```
-You can name this text file **lying.txt** (because obviously it is).  Then when you run your container share the folder that this text file resides in as a volume.
+This text file is named **lying.txt** because obviously it is.  When you run your container and volume mount the folder containing this file, then this folder is accessible in the container.
 
 Now use the [sed command](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/) provided in busybox  to replace the word "best" with "worst" and write it to a new file.
 

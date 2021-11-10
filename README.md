@@ -69,21 +69,10 @@ Server: Docker Engine - Community
   StackAPI:         v1beta2
 ```
 
-Test kubernetes by running the **kubectl get nodes** command.
-This should show you one worker node running on your machine:
-```
-C:\Users\barry>kubectl get nodes
-NAME             STATUS   ROLES    AGE   VERSION
-docker-desktop   Ready    master   45d   v1.14.8
-
-```
-If these both work, you should be ready to go.
-
-
 #### Optional Pre-reqs (all OS's)
 ##### Install Visual Studio Code
 
-You will be editing YAML files and viewing Python code during the course of this exercise.  You can use any text editor, but Visual Studio Code is recommended.
+You will be editing text files and viewing Python code during the course of this exercise.  You can use any text editor, but Visual Studio Code has many good extensions(aka plugins) and it's free.
 
 [Download and install VS Code](https://code.visualstudio.com/)
 
