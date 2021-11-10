@@ -179,9 +179,9 @@ For our SpringBoot app here's the list of important items for Dockerizing the ap
 1. **Startup Command**:  Our app will just require the **java -jar <path_to_jar/jarname.jar>** to start the applicaiton
 
 **Getting Started**
-To start on creating the Dockerfile for this app, go ahead and copy the [Dockerfile from here]() to your local machine into an empty folder.  This Dockerfile will have more details and even the link to the jar in artifactory.
+To start on creating the Dockerfile for this app, go ahead and copy the [Dockerfile from here]() to your local machine into an empty folder.  This Dockerfile will have more details and even the link to the jar in **.
 
-Edit the Dockerfile to properly produce an image that will run our application.  Remember you can copy the jar locally before building the image or have the docker build pull the jar from artifactory directly.
+Edit the Dockerfile to properly produce an image that will run our application.  Remember you can copy the jar locally before building the image or have the docker build pull the jar from ** directly.
 
 Once you have your Dockerfile completed you can open a terminal/command prompt at the location of the Dockerfile and run this command to build a local image:
 ```
