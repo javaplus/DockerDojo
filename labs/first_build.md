@@ -42,7 +42,7 @@ For this exercise, you will take an existing Python application and use the Dock
 
 You'll be working with this repository and configuration contanied within.  Clone it to a location of your choosing and open the directory in VS Code.
 
-> TIP: Run the following command from a directory containing no paths.  On Windows, a root directory of `C:\devl\ws` is a good convention.  In MacOS or Linux, this author uses a convention of `$HOME/code`.
+> TIP: Run the following command from a directory containing no paths with spaces or backed up by Onedrive.
 
 ```bash
 git clone https://github.com/javaplus/DockerDojo.git
