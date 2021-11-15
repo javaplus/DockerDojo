@@ -18,7 +18,7 @@ If you don't already have a Git Client, you can download the Git tools from here
  - https://git-scm.com/downloads
 
 
-#### Docker & Kubernetes:
+#### Docker:
 
 Here are links and instructions per operating system:
 
