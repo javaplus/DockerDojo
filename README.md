@@ -1,9 +1,8 @@
-# Docker and Kubernetes Dojo
-Tutorial on Using Docker
+# Docker Dojo
+Hands-on Tutorial for learning Docker!  This is a collection of tutorials and exercises that help you get familar with Docker.
+All interaction with Docker is done using the Docker CLI through the command-line/terminal. Some of the guides/labs walk you through what to do, but later on are more labs that just give you scenarios to try out and you figure it out on your own.  Don't worry there are solutions if you get stuck or want to check if you came up with the same way of solving the problem as us.
 
-## Presentation
-
-This is provided to those that attended an in-person workshop who wish to reference back to topics discussed.  Much of the context is missing for those that did't attend, however it is not required material in order to proceed with the rest of the workshop below.
+If you'd like to have me guide you or your team through this training feel free to reach out to me @ btarlton@gmail.com.
 
 ## Pre-requisites:
 
