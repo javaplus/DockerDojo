@@ -9,9 +9,9 @@ So, first create your own HTML file and save it to a preferably simple/short pat
 
 Now you will need to run the nginx container with the '-v' option and replace the "/some/content" with the path to the **folder** containing your newly created HTML.  NOTE: the example from hub.docker.com doesn't add the -p (publish port) option, so if you use it as is, you won't be able to access your nginx container... so add the "-p 8080:80" option to it along with the new volume option.  
 
-**Note:** In order for Docker desktop to access your local hard drive for the volume mount, you need to grant it permissions to your folder where your HTML exists.  You can do this by going to the Docker Desktop Settings and then go under Resources->File Sharing.  Then add the folder that contains your HTML.  Here's the [official documentation on file sharing](https://docs.docker.com/docker-for-windows/#file-sharing) with Docker Desktop.
+**Note for Windows users:**  Older versions of Docker Desktop could run using Hyper-V technology, however, now it's recommended to use the newest version of Docker Desktop with WSL (Windows Subsystem for Linux) if that option is avaible for you.  If you are using an older version of Docker Desktop with Hyper-V, then in order for Docker desktop to access your local hard drive for the volume mount, you need to grant it permissions to your folder where your HTML exists.  You can do this by going to the Docker Desktop Settings and then go under Resources->File Sharing.  Then add the folder that contains your HTML.  
 
-NOTE: When you run the command the first time with a volume option, Docker will prompt you to ask you if you want to share the folder with Docker.  So, watch for a pop-up to ask you to share the folder.  Also, if you are on Windows, you are best to run this command from the basic command prompt or powershell. Using something like git bash can confuse things since it typically expect linux style paths.
+**NOTE:** If you are on Windows, you are best to run this command from the basic command prompt or powershell. Using something like git bash can confuse things since it typically expect linux style paths.
 
 Also, be aware of the docker run syntax...
 ```
