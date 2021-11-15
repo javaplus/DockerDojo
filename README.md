@@ -86,11 +86,11 @@ This is a useful, but not required, Chrome extension for viewing JSON output in 
 
 # ~~ Labs ~~
 
-1. [Intro to Docker and Containers](labs/docker_intro.md)
+1. [Intro to Docker and Containers](labs/intro.md)
 
-1. [Docker with Cloud Native App](labs/docker_cloud_app.md)
+1. [NGNIX with Custom HTML](labs/nginx_volume_mount.md)
 
-1. [Docker for Tooling](labs/docker_tools_container.md)
+1. [Docker for Tooling](labs/tools_container.md)
 
 
 
@@ -102,8 +102,4 @@ This is a useful, but not required, Chrome extension for viewing JSON output in 
 
 # ~~ Conclusion ~~
 
-This exercise has introduced you to some of the most commonly used features of Kubernetes for configuring and hosting applications using declarative, Infrastructure as Code techniques.  Even what we've shown here only begins to scratch the surface.  Here are other topics you'll want to dig deeper on as you continue your Kubernetes journey.
 
-* [Managing Compute Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/)
-* [Declaring and using ConfigMaps to configure a Deployment](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
-* [Declaring and using Secrets to configure a Deployment](https://kubernetes.io/docs/concepts/configuration/secret/)
