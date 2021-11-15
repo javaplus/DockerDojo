@@ -84,11 +84,13 @@ This is a useful, but not required, Chrome extension for viewing JSON output in 
 
 ---
 
-# ~~ Labs ~~
+# ~~ Labs Where the Fun Begins! ~~
 
 1. [Intro to Docker and Containers](labs/intro.md)
 
 1. [NGNIX with Custom HTML](labs/nginx_volume_mount.md)
+
+1. [NGNIX with Custom HTML](labs/first_build.md.md)
 
 1. [Docker for Tooling](labs/tools_container.md)
 
