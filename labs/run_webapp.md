@@ -2,12 +2,12 @@
 
 Now you will run a simple Java web app that displays a message based on an environment variable.  
 
-To pull from this registry instead of Docker hub on the internet, you simple prefix the image name with the registry.
+Since this is not an "official image", but one of my owne, to pull from Docker hub, you simple prefix the image name with the user or organization name.
 
-So, the image you will be working with is: **hello-message**
+So, the image you will be working with is: **javaplus/cloud-app-demo**
 
-The beginning part, **""** is the registry host.  The next part, **""**, is an organization or user account within that registry.
-Then finally the last part is the image name, **"hello-message"**.
+The "javaplus" prefix is an organization or user account within the Docker hub registry.
+Then finally the last part is the image name, **"cloud-app-demo"**.
 
 When you run this image it will start a java webapplication (via SpringBoot) to listen for requests on port 8080 on the url "/hello".
 
