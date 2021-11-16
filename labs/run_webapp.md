@@ -1,6 +1,6 @@
-## Using 
+## Using Environment Variables
 
-Now you will run a simple web app that comes from our own [internal DTR]().  This is where we keep ** specific Docker images.
+Now you will run a simple Java web app that displays a message based on an environment variable.  
 
 To pull from this registry instead of Docker hub on the internet, you simple prefix the image name with the registry.
 
