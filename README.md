@@ -1,12 +1,12 @@
 # Docker Dojo
 Hands-on Tutorial for learning Docker!  This is a collection of tutorials and exercises that help you get familar with Docker.
-All interaction with Docker is done using the Docker CLI through the command-line/terminal. Some of the guides/labs walk you through what to do, but later on are more labs that just give you scenarios to try out and you figure it out on your own.  Don't worry there are solutions if you get stuck or want to check if you came up with the same way of solving the problem as us.
+All interaction with Docker is done using the Docker CLI through the command-line/terminal. Some of the guides/labs walk you through what to do, but there are some labs that that provide challenges to test out what you learn.  Don't worry there are solutions if you get stuck or want to check if you came up with the same way of solving the problem as us.
 
 If you'd like to have me guide you or your team through this training feel free to reach out to me @ btarlton@gmail.com.
 
 ## Pre-requisites:
 
-Generally speaking you need to have the Git client and Docker installed locally.
+Generally speaking you need to have the Git client and Docker installed locally (see links and details below).
 
 #### A console or shell environment
 
@@ -88,13 +88,15 @@ This is a useful, but not required, Chrome extension for viewing JSON output in 
 
 1. [Intro to Docker and Containers](labs/intro.md)
 
-1. [NGNIX with Custom HTML](labs/nginx_volume_mount.md)
+1. [Volume Mounts with Nginx](labs/nginx_volume_mount.md)
+
+1. [Volume Mount Trial](labs/starwars_volume_mount.md)
 
 1. [Building Custom Images](labs/first_build.md)
 
 1. [Docker for Tooling](labs/tools_container.md)
 
-
+1. [Docker for Tooling](labs/tools_container.md)
 
 
 ---
