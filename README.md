@@ -1,6 +1,6 @@
 # Docker Dojo
 Hands-on Tutorial for learning Docker!  This is a collection of tutorials and exercises that help you get familar with Docker.
-All interaction with Docker is done using the Docker CLI through the command-line/terminal. Some of the guides/labs walk you through what to do, but there are some labs that that provide challenges to test out what you learn.  Don't worry there are solutions if you get stuck or want to check if you came up with the same way of solving the problem as us.
+All interaction with Docker is done using the Docker CLI through the command-line/terminal. There are tutorials which walk you through what to do and there are labs which  provide challenges to test out what you've learned.  Don't worry there are solutions if you get stuck or want to check if you came up with the same way of solving the problem as us.
 
 If you'd like to have me guide you or your team through this training feel free to reach out to me @ btarlton@gmail.com.
 
@@ -84,17 +84,19 @@ This is a useful, but not required, Chrome extension for viewing JSON output in 
 
 ---
 
-# ~~ Labs Where the Fun Begins! ~~
+# ~~ Content: Where the Fun Begins! ~~
 
-1. [Intro to Docker and Containers](labs/intro.md)
+Below is the recommended order of going through the training.  Those marked as "Tutorial" provide step-by-step instructions on what to do.  The "Lab" sections describe scenarios which you must use Docker to complete.
 
-1. [Volume Mounts with Nginx](labs/nginx_volume_mount.md)
+1. [Intro to Docker and Containers(Tutorial)](labs/intro.md)
 
-1. [Volume Mount Trial](labs/starwars_volume_mount.md)
+1. [Volume Mounts with Nginx (Lab)](labs/nginx_volume_mount.md)
 
-1. [Using Environment Variables(Lab)](labs/run_webapp.md)
+1. [Changing Local Files with Docker (Lab) ](labs/starwars_volume_mount.md)
 
-1. [Building Custom Images(Tutorial)](labs/first_build.md)
+1. [Using Environment Variables (Lab)](labs/run_webapp.md)
+
+1. [Building Custom Images (Tutorial)](labs/first_build.md)
 
 1. [Make Cow Talk (Lab)](labs/cow_talk_1.md)
 
