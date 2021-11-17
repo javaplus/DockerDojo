@@ -158,4 +158,16 @@ Try killing the container and then start a new ngnx container. Then check the in
  
 ## Summary of Commands:
  
- **docker run <options> <imagename>:<tag>** -  the run command starts a container based off the image you specify.  After "run" you specify any options such as "-p 8080:80" to specify a port mapping. After the options, you specify the image you wish to use to create the container.  Later we will see that after the image name it's possible to pass arguments to the container as well.
+ **[docker run <options> <imagename>:<tag>](https://docs.docker.com/engine/reference/commandline/run/)** -  the run command starts a container based off the image you specify.  After "run" you specify any options such as "-p 8080:80" to specify a port mapping. After the options, you specify the image you wish to use to create the container.  Later we will see that after the image name it's possible to pass arguments to the container as well.
+ 
+ 
+ **[docker images](https://docs.docker.com/engine/reference/commandline/images/)** -  Displays the images you have pulled locally on your machine.  A docker run command will attempt first to find the image locally, but will then go to hub.docker.com to pull the image if it's not available in your local images.
+ 
+ 
+ **[docker ps](https://docs.docker.com/engine/reference/commandline/ps/)** - Shows running docker containers. Adding the '-a' option shows all containers not just running ones.
+ 
+ **[docker stop/kill <container id> or <container name>](https://docs.docker.com/engine/reference/commandline/stop/)** - Stops running docker containers.
+ 
+ **[docker exec <container id> <command>](https://docs.docker.com/engine/reference/commandline/exec/)** - Stops running docker containers.
+ 
+ 
