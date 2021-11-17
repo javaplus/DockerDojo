@@ -156,8 +156,8 @@ If you do it correctly, you should be able to open a browser to http://localhost
 Try killing the container and then start a new ngnx container. Then check the index.html in the new container.  Is your message still there? Why wouldn't it be there?
 
  
-## Summary of Commands:
- 
+## Summary of Commands from this Tutorial:
+  
  **[docker run <options> <imagename>:<tag>](https://docs.docker.com/engine/reference/commandline/run/)** -  the run command starts a container based off the image you specify.  After "run" you specify any options such as "-p 8080:80" to specify a port mapping. After the options, you specify the image you wish to use to create the container.  Later we will see that after the image name it's possible to pass arguments to the container as well.
  
  
