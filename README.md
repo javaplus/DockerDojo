@@ -96,7 +96,11 @@ Below is the recommended order of going through the training.  Those marked as "
 
 1. [Using Environment Variables (Lab)](labs/run_webapp.md)
 
-1. [Building Custom Images (Tutorial)](labs/first_build.md)
+1. [Building Your Custom Image (Tutorial)](labs/first_build.md)
+
+1. [Building Python Custom Image (Tutorial)](labs/build_python.md)
+
+1. [Building Java Custom Image (Tutorial)](labs/build_java.md)
 
 1. [Make Cow Talk (Lab)](labs/cow_talk_1.md)
 
