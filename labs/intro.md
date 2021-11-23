@@ -85,7 +85,10 @@ This will start a container running NGINX and spit out the container id. NGINX l
 After you've seen the NGINX welcome screen in the browser, refresh it a few times to get a few hits.
 
 Now lets see how to look at the logs of your container.  First we need to find the container ID.  You should have seen the full container id spit out to the console when you ran the docker run command.  But if you lost that window, you can simply run a [docker ps](https://docs.docker.com/engine/reference/commandline/ps/) to see the currently running containers.
-Do that now... run "docker ps"
+Do that now... run 
+```
+docker ps
+```
 
 You should see something like this:
 ```
@@ -96,8 +99,10 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 ```
 Note the **CONTAINER ID** is the unique ID for your running conatiner.  It's crucial to know if you want to do anything later with your running container... like stopping it.
 
-To see the logs of the current container, just run "docker logs <container id>"
- 
+To see the logs of the current container, just run 
+```
+docker logs <container id>
+```
  This should spit out the current logs of your running container.  In our case, it should just show a line for each hit to the NGINX welcome page.
 
 If you actually, want to stop or kill the running container, you need to use the [docker stop](https://docs.docker.com/engine/reference/commandline/stop/) or the [docker kill](https://docs.docker.com/engine/reference/commandline/kill/) command.  I usually just kill them all and let the Docker gods sort em out.
@@ -164,5 +169,8 @@ Try killing the container and then start a new ngnx container. Then check the in
  **[docker stop/kill <container id> or <container name>](https://docs.docker.com/engine/reference/commandline/stop/)** - Stops running docker containers.
  
  **[docker exec <container id> <command>](https://docs.docker.com/engine/reference/commandline/exec/)** - Stops running docker containers.
+
+ **[docker logs <container id>](https://docs.docker.com/engine/reference/commandline/logs/)** - Retrieves Logs from Container.
+ 
  
  
