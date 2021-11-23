@@ -31,6 +31,9 @@ Here are links and instructions per operating system:
 ##### Mac
   - Docker Desktop for Mac : https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
+##### Kubernetes
+ - After installing Docker Desktop, go to the Settings (of Docker Desktop) and go to the Kubernetes tab and check the "Enable Kubernetes".  This will download a few additional components and then restart Docker Desktop.
+ 
 ### Testing your Installation
 
 Run the **docker version** command and you should see something like this:
@@ -67,6 +70,16 @@ Server: Docker Engine - Community
   Version:          v1.14.8
   StackAPI:         v1beta2
 ```
+
+Test kubernetes by running the **kubectl get nodes** command.
+This should show you one worker node running on your machine:
+```
+C:\Users\Barry>kubectl get nodes
+NAME             STATUS   ROLES                  AGE     VERSION
+docker-desktop   Ready    control-plane,master   3h51m   v1.21.5
+
+```
+If these both work, you should be ready to go.
 
 #### Optional Pre-reqs (all OS's)
 ##### Install Visual Studio Code
