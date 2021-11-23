@@ -16,7 +16,6 @@ Enough talking, let's run a container.  Issue this command:
 
 ```
 docker run hello-world:latest
-
 ```
 This will cause Docker to pull down the latest version of the hello-world image and then run it. 
 You should see something like this:
@@ -74,7 +73,6 @@ Run this command:
 
 ```
 docker run -p 8080:80 -d nginx
-
 ```
 This will start a container running NGINX and spit out the container id. NGINX listens on port 80 by default, so we are telling Docker to expose the internal port 80 to our local port 8080.  Notice the -p for publishing ports follows the syntax of \<External Port\>:\<Internal Port\>.  The -d option says to run this container in detached mode.  
  
@@ -124,15 +122,12 @@ Restart your container by running the docker run command again:
 
 ```
 docker run -p 8080:80 -d nginx
-
 ```
 
 Now run the docker exec command like this: (**NOTE**: be sure to replace <container id> with your container id).
 
 ```
-
 docker exec -it <container id> bash
-
 ```
 
 This should this give you a bash prompt that looks something like this:
