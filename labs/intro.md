@@ -68,7 +68,7 @@ The K8s and docker images in the picture above are from the local Kubernetes ins
 
 ### Run NGINX
 
-Now we are going to run a simple [NGINX](http://nginx.org/en/) container that can be used to host web content.
+Now we are going to run a simple [NGINX](http://nginx.org/en/) container that can be used to host static web content(html, javascript, etc...).
 
 We are going to use the **docker run** command again but use a different image (the nginx image) and also specify a port to expose the running container on.
 
