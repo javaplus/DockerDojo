@@ -117,6 +117,14 @@ docker stop <YOUR CONTAINER ID>
 ```
 After this, re-run your **docker ps** command and notice that the container should no longer be running.
 
+### Practice makes better
+
+Practice starting and stopping the container a few times.  Remember to use the "docker ps" option to see the status of your container or get the id of running containers.
+Try changing the first number after the "-p" option to publish/open a different port locally.  You can use any open port on your machine for the first part of the "-p", but you must keep the second port number to what the application in the container is listening on. Since we are using Nginx, it's listening on port 80. So, try starting the container with something like this:
+```
+docker run -p 9090:80 -d nginx
+```
+
 
 ### Interacting Directly with Containers
 
