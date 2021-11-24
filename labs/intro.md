@@ -140,12 +140,28 @@ Restart your container by running the docker run command again:
 docker run -p 8080:80 -d nginx
 ```
 
-Now run the docker exec command like this: (**NOTE**: be sure to replace <container id> with your container id).
+We will start with a simple command to execute the "ls" command against the /usr/share/nginx/html folder to list the files in that directory: (**NOTE**: be sure to replace <container id> with your container id).
+ 
+```
+docker exec -it <container id> ls /usr/share/nginx/html
+```
+ This command executes against the running container and pipes the output back to our console.
+
+ Sample output:
+ 
+```
+C:\Users\Barry>docker exec 448ea25c7456 ls /usr/share/nginx/html
+50x.html
+index.html
+
+C:\Users\Barry>
+```
+Now we will do something even more interesting with the exec command.  Now we will use it to give us a bash(shell) prompt into the container. 
+To do this run this docker exec command: (**NOTE**: be sure to replace <container id> with your container id).
 
 ```
 docker exec -it <container id> bash
 ```
-
 This should this give you a bash prompt that looks something like this:
 
 ```
