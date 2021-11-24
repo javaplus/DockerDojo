@@ -2,7 +2,7 @@
 
 Now you will run a simple Java web app that displays a message based on an environment variable.  
 
-Since this is not an "official image", but one of my owne, to pull from Docker hub, you simple prefix the image name with the user or organization name.
+Since this is not an "official image", but one of my own, to pull from Docker hub, you simple prefix the image name with the user or organization name.
 
 So, the image you will be working with is: **javaplus/cloud-app-demo**
 
