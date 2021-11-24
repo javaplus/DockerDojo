@@ -181,6 +181,19 @@ echo "All your html are belong to us" > index.html
 If you do it correctly, you should be able to open a browser to http://localhost:8080 again and see your new message instead of the default nginx greeting.
  
 To get out of the bash(shell) prompt, you can simply type **exit** to return back to your command prompt/terminal.
+ Example flow of exec'ing into the container:
+ ```
+ C:\Users\Barry>docker exec -it 448 bash
+root@448ea25c7456:/# cd /usr/share/nginx/html
+root@448ea25c7456:/usr/share/nginx/html# ls
+50x.html  index.html
+root@448ea25c7456:/usr/share/nginx/html# echo "All your html are belong to us" > index.html
+root@448ea25c7456:/usr/share/nginx/html#
+root@448ea25c7456:/usr/share/nginx/html# exit
+exit
+
+C:\Users\Barry>
+ ```
 
 Try killing the container and then start a new ngnx container. Then check the index.html in the new container.  Is your message still there? Why wouldn't it be there?
 
