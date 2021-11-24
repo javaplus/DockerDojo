@@ -55,6 +55,9 @@ The output from this command actually tells you what it did.  When it says that 
 Speaking of images, let's see what images you have installed locally.
 
 Run the **Docker images** command to see the list of images on your machine.
+```
+docker images
+```
 
 After running this command, you should see something like this:
 ![Images](images/Images.png)
