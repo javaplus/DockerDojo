@@ -100,7 +100,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 7e65845aa3ee        nginx               "nginx -g 'daemon of…"   4 minutes ago       Up 4 minutes        0.0.0.0:8080->80/tcp   recursing_khayyam
 
 ```
-Note the **CONTAINER ID** is the unique ID for your running conatiner.  It's crucial to know if you want to do anything later with your running container... like stopping it.
+Note the **CONTAINER ID** is the dynamically generated ID for your running conatiner.  It's crucial to know if you want to do anything later with your running container... like stopping it.  **NOTE**: there is the option to name your container by using the "--name" option.  
 
 To see the logs of the current container, just run 
 ```
