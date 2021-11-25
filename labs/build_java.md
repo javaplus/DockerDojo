@@ -23,7 +23,7 @@ For our SpringBoot app here's the list of important items for Dockerizing the ap
 
 1. **Required Software**: For a [SpringBoot executable jar](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-executable-jar-format.html), only a JDK is necessary.  
 1. **Configs**: For our simple SpringBoot we do not have any special configs.
-1. **Application Code**:  Our application, once packaged, consists of a single jar file that needs copied into the image. You do not have to build the application for this lab, but instead you will pull the already built jar file from [Artifactory]() where the packaged jar has already been published. A common location and naming convention is to just put the jar in the **/usr/app/** directory and call it **app.jar**.
+1. **Application Code**:  Our application, once packaged, consists of a single jar file that needs copied into the image. You do not have to build the application for this lab, but instead you will pull the already built jar file from https://github.com/javaplus/CloudAppsDemo/raw/master/target/cloud-app-1.jar where the packaged jar has already been uploaded. A common location and naming convention is to just put the jar in the **/usr/app/** directory and call it **app.jar**.
 1. **Startup Command**:  Our app will just require the **java -jar <path_to_jar/jarname.jar>** to start the applicaiton
 
 **Getting Started**
