@@ -1,9 +1,8 @@
 
 ## Build a Java SpringBoot Application
  
-For this exercise, we will be creating a Dockerfile for a SpringBoot app that can be found in this repo: **TO BE ADDED**
-
-This app should be familar as it was used during the Developer Mindset and Java Tooling pre-requisite class.
+For this exercise, we will be creating a Dockerfile for a simple SpringBoot app that exposes a simple Rest API.  This is the same application you ran when using the javaplus/cloud-app-demo image earlier. However, this time you will be building the image yourself.  You will use the built application code to add to an image that will allow the application to run.  We will provide you with a link to the jar file. If intersted, the source code can be found in this repo: https://github.com/javaplus/CloudAppsDemo.
+Before we get started, read through the general advice for considerations when building a Docker image.
 
 #### General Advice for Dockerizing an Application
 To Dockerize any application, it's critical to understand the requirements to run the app.  
@@ -24,13 +23,13 @@ For our SpringBoot app here's the list of important items for Dockerizing the ap
 
 1. **Required Software**: For a [SpringBoot executable jar](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-executable-jar-format.html), only a JDK is necessary.  
 1. **Configs**: For our simple SpringBoot we do not have any special configs.
-1. **Application Code**:  Our application, once packaged, consists of a single jar file that needs copied into the image.  The application was built through Maven following the [instructions]() you most likely did as a pre-requisite for this training.  You do not have to build the application for this lab, but instead you will pull the already built jar file from [Artifactory]() where the packaged jar has already been published. A common location and naming convention is to just put the jar in the **/usr/app/** directory and call it **app.jar**.
+1. **Application Code**:  Our application, once packaged, consists of a single jar file that needs copied into the image. You do not have to build the application for this lab, but instead you will pull the already built jar file from [Artifactory]() where the packaged jar has already been published. A common location and naming convention is to just put the jar in the **/usr/app/** directory and call it **app.jar**.
 1. **Startup Command**:  Our app will just require the **java -jar <path_to_jar/jarname.jar>** to start the applicaiton
 
 **Getting Started**
-To start on creating the Dockerfile for this app, go ahead and copy the [Dockerfile from here]() to your local machine into an empty folder.  This Dockerfile will have more details and even the link to the jar in **.
+To start on creating the Dockerfile for this app, go ahead and copy the [Dockerfile from here](https://github.com/javaplus/CloudAppsDemo/blob/master/Dockerfile) to your local machine into an empty folder.  This Dockerfile will have more details and even the link to the packaged application jar.
 
-Edit the Dockerfile to properly produce an image that will run our application.  Remember you can copy the jar locally before building the image or have the docker build pull the jar from ** directly.
+Edit the Dockerfile to properly produce an image that will run our application.  Remember you can copy the jar locally before building the image or have the docker build pull the jar from https://github.com/javaplus/CloudAppsDemo/raw/master/target/cloud-app-1.jar directly.
 
 Once you have your Dockerfile completed you can open a terminal/command prompt at the location of the Dockerfile and run this command to build a local image:
 ```
@@ -52,7 +51,7 @@ curl http://localhost:8080/hello
 ```
 Either way, you should see the output
 ```
-Hello From Your Super Duper Spring Boot app!
+Hello From Your Super Duper Spring Boot app! (Properties file edition)
 ```
 
 ## Additional Resources:
