@@ -31,8 +31,16 @@ Here are links and instructions per operating system:
 ##### Mac
   - Docker Desktop for Mac : https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
+##### Linux
+Follow guides like [this one](https://phoenixnap.com/kb/install-kubernetes-on-ubuntu) and [this one](https://phoenixnap.com/kb/install-minikube-on-ubuntu). Install docker, kubectl, and minikube.
+
+```
+sudo apt-get kubeadm kubelet kubectl
+sudo apt install virtualbox virtualbox-ext-pack
+```
+
 ##### Kubernetes
- - After installing Docker Desktop, go to the Settings (of Docker Desktop) and go to the Kubernetes tab and check the "Enable Kubernetes". This will download a few additional components and then restart Docker Desktop.
+ - After installing Docker Desktop, go to the Settings (of Docker Desktop) and go to the Kubernetes tab and check the "Enable Kubernetes". This will download a few additional components and then restart Docker Desktop. (On Linux you'll probably install kubectl through apt-get in the docker step).
  
 ### Testing your Installation
 

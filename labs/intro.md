@@ -162,6 +162,9 @@ To do this run this docker exec command: (**NOTE**: be sure to replace <containe
 ```
 docker exec -it <container id> bash
 ```
+
+> Side Note: If you gave your container a name by running it with something like `docker run --name nginx -p 8080:80 -d nginx`, you can use the name instead of finding the container id: `docker exec -it nginx bash`
+
 This should this give you a bash prompt that looks something like this:
 
 ```
