@@ -18,4 +18,6 @@ Also, be aware of the docker run syntax...
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 ```
 
+#### Stretch Goal
 
+What would you have to do if you wanted to change the index.html?  Try adding new text to it?  Do you need to restart the container?
