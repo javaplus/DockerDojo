@@ -20,6 +20,6 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 #### Stretch Goal
 
-What would you have to do if you wanted to change the index.html?  Try adding new text to it?  Do you need to restart the container or can you just refresh the browser?
+What would you have to do if you wanted to change the index.html?  Try adding new text to it.  Do you need to restart the container or can you just refresh the browser?
 
 Volume mounts are an important concept to grasp especially anytime you need data to persist beyond the life of a container.
