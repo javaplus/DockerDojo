@@ -11,7 +11,7 @@ Then finally the last part is the image name, **"cloud-app-demo"**.
 
 When you run this image it will start a java webapplication (via SpringBoot) to listen for requests on port 8080 on the url "/hello".
 
-So, run a container with this image **hello-message** (latest tag) so that you can connect to http://localhost:8080/hello and see the message: **Message from Properties File**
+So, run a container with this image **hello-message** (latest tag) so that you can connect to http://localhost:8080/hello and see the message: **hello there from a properties file**
 
 The message you see is being read from a properties file, but can be overridden by an enviornment variable named **mymessage**.
 
