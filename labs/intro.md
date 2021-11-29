@@ -210,7 +210,7 @@ Try killing the container and then start a new ngnx container. Then check the in
  
  **[docker stop/kill <container id> or <container name>](https://docs.docker.com/engine/reference/commandline/stop/)** - Stops running docker containers.
  
- **[docker exec <container id> <command>](https://docs.docker.com/engine/reference/commandline/exec/)** - Stops running docker containers.
+ **[docker exec <container id> <command>](https://docs.docker.com/engine/reference/commandline/exec/)** - Executes a command against a running container.
 
  **[docker logs <container id>](https://docs.docker.com/engine/reference/commandline/logs/)** - Retrieves Logs from Container.
  
